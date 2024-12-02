@@ -1,12 +1,12 @@
-Documentação de decisões técnicas e considerações relevantes:
-    Criei 3 tabelas, sendo elas:
-        pneu - será gravado as informações do pneu e da posição. Essa posição será validada no código se está reptindo a posição e o veículo.
-        veículo - será gravado as informações do veículo e o tipo do veículo.
-        tipo de veículo - será gravado o tipo do veículo com o intuito de fazer uma validação na quantidade permitida de pneus cadastrado por veículo.
+# Documentação de decisões técnicas e considerações relevantes
+## Criado 3 tabelas
+- pneu - será gravado as informações do pneu e da posição. Essa posição será validada no código se está reptindo a posição e o veículo.
+- veículo - será gravado as informações do veículo e o tipo do veículo.
+- tipo de veículo - será gravado o tipo do veículo com o intuito de fazer uma validação na quantidade permitida de pneus cadastrado por veículo.
 
-    Foi criado CRUD padrão para as tabelas de pneu e veículo, como a tabela de tipo de veículo não é algo que é alterado muito essa tabela precisa ser populada via script.
+Foi criado CRUD padrão para as tabelas de pneu e veículo, como a tabela de tipo de veículo não é algo que é alterado muito essa tabela precisa ser populada via script.
 
-    Como testar:
+## Como testar
         Tabela veículo - Get - sera buscado todos os veículos sem os pneus informado de acordo com a paginação
             http://localhost:8080/vehicle?page=1&size=15
         Post - será gravado as informações do veículo
